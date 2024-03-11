@@ -1,0 +1,8 @@
+
+.bg_footer {
+    background-color: var(--footer-bg);
+}
+
+.social_media_link:hover path {
+    fill: var(--footer-links);
+}

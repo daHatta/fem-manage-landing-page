@@ -1,0 +1,8 @@
+
+.testimonial_bg {
+    background-color: var(--testimonial-bg);
+}
+
+.testimonial_text {
+    color: var(--testimonial-text);
+}

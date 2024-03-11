@@ -1,0 +1,71 @@
+
+.feature_text {
+    color: var(--hero-text);
+}
+
+/* by Kevin Powell (https://github.com/kevin-powell/fem-manage-landing-page-part-8) */
+.numbered_items {
+    counter-reset: count;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.numbered_items li {
+    counter-increment: count;
+}
+
+.numbered_items div {
+    display: grid;
+    position: relative;
+    align-items: center;
+    column-gap: 1rem;
+    grid-template-columns: min-content 1fr;
+}
+
+.numbered_items h3 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    line-height: 1;
+}
+
+.numbered_items p {
+    grid-column: 1 / -1;
+}
+
+@media (min-width: 30em) {
+    .numbered_items p {
+        grid-column: 2 / -1;
+    }
+}
+
+.numbered_items div::before,
+.numbered_items div::after {
+    height: 40px;
+}
+
+.numbered_items div::before {
+    content: "0" counter(count);
+    display: flex;
+    align-items: center;
+    color: var(--veryLightGray);
+    font-weight: 700;
+    background-color: var(--brightRed);
+    padding: 0 1.5rem;
+    border-radius: 100vw;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+@media (max-width: 30em) {
+    .numbered_items div::after {
+        --bg: var(--veryPaleRed);
+        content: "";
+        display: block;
+        z-index: -1;
+        border-radius: 100vw 0 0 100vw;
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        box-shadow: 5em 0 0 var(--bg);
+        background: var(--bg);
+    }
+}

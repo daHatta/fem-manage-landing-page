@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { be_vietnam_pro } from "./fonts";
+import "./css/globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import Header from "./_components/Header";
+import Footer from "./_components/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +17,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+      </head>
+      <body className={`${be_vietnam_pro.className} text-base font-normal leading-normal`}>
+        <Header />
+          {children}
+        <Footer />
+      </body>
     </html>
-  );
-}
+  )
+};

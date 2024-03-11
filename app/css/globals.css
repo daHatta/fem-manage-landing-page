@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+
+  /* Colors */
+  --brightRed: hsl(12, 88%, 59%);
+  --darkBlue: hsl(228, 39%, 23%);
+  
+  --darkGrayishBlue: hsl(227, 12%, 61%);
+  --veryDarkBlue: hsl(233, 12%, 13%);
+  --veryPaleRed: hsl(13, 100%, 96%);
+  --veryLightGray: hsl(0, 0%, 98%);
+
+
+  /* CIA: Colors in action */
+  --nav-link: var(--darkGrayishBlue);
+  --primary-btn: var(--brightRed);
+
+  --hero-text: var(--darkGrayishBlue);
+  --testimonial-bg: var(--veryLightGray);
+  --testimonial-text: var(--darkGrayishBlue);
+  --cta-bg: var(--brightRed);
+
+  --footer-bg: var(--veryDarkBlue);
+  --footer-links: var(--brightRed);
+
+}
+
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    
+  }
+}
+*/
+body {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="814" height="814"><rect width="436" height="970" x="774" y="-62" fill="%23FFF0EC" fill-rule="evenodd" rx="218" transform="rotate(45 718.814 -291.157)"/></svg>');
+/* background-attachment: fixed | scroll; */
+  background-size: 800px;
+  background-position: top -15% right -15%;
+  background-repeat: no-repeat;
+/* background-origin: border-box | padding-box | content-box; */
+/* background-clip: border-box | padding-box | content-box; */
+/* background-blend-mode: multiply | screen | overlay; */  
+}
+
+#features {
+  position: relative;
+  z-index: 3;
+}
+
+#features::after {
+  content: "";
+  position: absolute;
+  height: 800px;
+  width: 800px;
+  top: 300px;
+  left: -340px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="814" height="814"><rect width="436" height="970" x="774" y="-62" fill="%23FFF0EC" fill-rule="evenodd" rx="218" transform="rotate(45 718.814 -291.157)"/></svg>');
+  background-size: 800px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+#testimonials {
+  position: relative;
+  z-index: 4;
+}
+
+#cta {
+  position: relative;
+  z-index: 4;
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .visually-hidden {
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+}
+
