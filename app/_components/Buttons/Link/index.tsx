@@ -9,7 +9,7 @@ const LinkBtn = ({className}: Props) => {
     return (
         <Link
             href={"/"}
-            className={`p-3 px-6 rounded-full baseline ${className} ${classes.primary_btn}`}
+            className={`p-3 px-7 rounded-full text-xs baseline ${className} ${classes.primary_btn}`}
         >
             Get Started
         </Link>

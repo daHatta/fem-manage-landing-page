@@ -10,8 +10,8 @@ import classes from "./index.module.css";
 const Testimonials = () => {
     return (
         <section id="testimonials">
-            <div className="max-w-6xl mx-auto px-5 mt-32 text-center">
-                <h2 className="text-4xl font-bold text-center">What they’ve said</h2>
+            <div className="max-w-6xl mx-auto px-5 mt-[3rem] text-center flow-root lg:my-20">
+                <h2 className={`${classes.testimonial_title} text-3xl font-bold text-center`}>What they’ve said</h2>
                 <div className="flex flex-col mt-24 md:flex-row md:space-x-6">
                     <div className={`${classes.testimonial_bg} flex flex-col items-center p-6 space-y-6 rounded-lg md:w-1/3`}>
                         <Image
@@ -57,7 +57,7 @@ const Testimonials = () => {
                         </blockquote>
                     </div>
                 </div>
-                <div className="my-16">
+                <div className="flow-root my-16">
                     <LinkBtn className="text-white bg-brightRed" />
                 </div>
             </div>

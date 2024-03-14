@@ -6,7 +6,7 @@ import iconHamburger from "../../images/icon-hamburger.svg";
 
 const Header = () => {
     return (
-        <header className="container mx-auto p-6">
+        <header className="container mx-auto px-6 pt-8 pb-4 lg:py-10">
             <div className="flex items-center justify-between">
                 <Logo fill="var(--darkBlue)"/>
                 <Navigation />

@@ -1,4 +1,9 @@
 
+.hero_title {
+    color: var(--hero-title);
+    line-height: 1.2;
+}
+
 .hero_text {
     color: var(--hero-text);
 }

@@ -3,6 +3,40 @@
     background-color: var(--footer-bg);
 }
 
-.social_media_link:hover path {
+.social_media_link:hover path,
+.social_media_link:focus-visible path {
     fill: var(--footer-links);
+}
+
+.navi_list {
+    columns: 2 auto;
+}
+
+.navi_list li {
+    margin-bottom: 12px;
+}
+
+.navi_link:hover,
+.navi_link:focus-visible {
+    color: var(--footer-links);
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.social {
+    grid-area: social;
+}
+
+.navi {
+    grid-area: navi;
+}
+
+.newsletter {
+    grid-area: newsletter;
+}
+
+.copy {
+    grid-area: copyright;
 }

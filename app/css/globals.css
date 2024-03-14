@@ -19,7 +19,10 @@
   --nav-link: var(--darkGrayishBlue);
   --primary-btn: var(--brightRed);
 
+  --hero-title: var(--darkBlue);
   --hero-text: var(--darkGrayishBlue);
+  --feature-title: var(--darkBlue);
+  --feature-text: var(--darkGrayishBlue);
   --testimonial-bg: var(--veryLightGray);
   --testimonial-text: var(--darkGrayishBlue);
   --cta-bg: var(--brightRed);
@@ -36,34 +39,35 @@
   }
 }
 */
+
 body {
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="814" height="814"><rect width="436" height="970" x="774" y="-62" fill="%23FFF0EC" fill-rule="evenodd" rx="218" transform="rotate(45 718.814 -291.157)"/></svg>');
-/* background-attachment: fixed | scroll; */
-  background-size: 800px;
-  background-position: top -15% right -15%;
+  background-image: 
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="814" height="814"><rect width="436" height="970" x="774" y="-62" fill="%23FFF0EC" fill-rule="evenodd" rx="218" transform="rotate(45 718.814 -291.157)"/></svg>');
+    /* background-attachment: fixed | scroll; */
+  background-size: 430px, 300px;
+  background-position: top -90px right -110px, top 320px right;
   background-repeat: no-repeat;
 /* background-origin: border-box | padding-box | content-box; */
 /* background-clip: border-box | padding-box | content-box; */
 /* background-blend-mode: multiply | screen | overlay; */  
 }
 
+header, main, footer, section {
+  position: relative;
+  display: flow-root;
+}
+
+#hero {
+  background-image: 
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="814" height="814"><rect width="436" height="970" x="774" y="-62" fill="%23FFF0EC" fill-rule="evenodd" rx="218" transform="rotate(45 718.814 -291.157)"/></svg>');
+  background-size: 300px;
+  background-position: top 410px right -170px;
+  background-repeat: no-repeat;
+}
+
 #features {
   position: relative;
   z-index: 3;
-}
-
-#features::after {
-  content: "";
-  position: absolute;
-  height: 800px;
-  width: 800px;
-  top: 300px;
-  left: -340px;
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="814" height="814"><rect width="436" height="970" x="774" y="-62" fill="%23FFF0EC" fill-rule="evenodd" rx="218" transform="rotate(45 718.814 -291.157)"/></svg>');
-  background-size: 800px;
-  background-position: center top;
-  background-repeat: no-repeat;
-  z-index: 2;
 }
 
 #testimonials {
@@ -74,6 +78,82 @@ body {
 #cta {
   position: relative;
   z-index: 4;
+}
+
+#cta::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-image: 
+    url("../images/bg-tablet-pattern.svg");
+  background-size: 400px;
+  background-position: top 50px left -305px;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+}
+
+#footer > div {
+  grid-template-areas:
+    "newsletter"
+    "navi"
+    "social"
+    "logo"
+    "copyright"
+  ;
+  grid-template-rows: 5fr;
+  grid-template-columns: 1fr;
+}
+
+/* lg: 61em */
+@media screen and (min-width: 48em) {
+  
+  body {
+    background-size: 640px, 320px;
+    background-position: top -120px right -70px;
+    background-repeat: no-repeat;
+  /* background-origin: border-box | padding-box | content-box; */
+  /* background-clip: border-box | padding-box | content-box; */
+  /* background-blend-mode: multiply | screen | overlay; */  
+  }
+
+  #features::after {
+    content: "";
+    position: absolute;
+    height: 660px;
+    width: 660px;
+    top: 300px;
+    left: -360px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="814" height="814"><rect width="436" height="970" x="774" y="-62" fill="%23FFF0EC" fill-rule="evenodd" rx="218" transform="rotate(45 718.814 -291.157)"/></svg>');
+    background-size: 660px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  #cta::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-image: 
+      url("../images/bg-tablet-pattern.svg"),
+      url("../images/bg-tablet-pattern.svg");
+    background-size: 500px;
+    background-position: top -40px left 180px, top -385px right -270px;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+  }
+
+  #footer > div {
+    grid-template-areas: 
+      "logo navi newsletter"
+      "social navi copyright"
+    ;
+    grid-template-rows: 2fr;
+    grid-template-columns: min-content auto min-content;
+  }
+
 }
 
 
