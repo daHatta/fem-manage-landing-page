@@ -1,13 +1,6 @@
 
-.testimonial_bg {
-    background-color: var(--testimonial-bg);
-}
-
 .testimonial_title {
     color: var(--feature-title);
     line-height: 1.3;
 }
 
-.testimonial_text {
-    color: var(--testimonial-text);
-}

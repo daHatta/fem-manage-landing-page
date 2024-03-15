@@ -1,0 +1,8 @@
+.swiper_bg {
+    background-color: var(--testimonial-bg);
+}
+
+.swiper_text {
+    color: var(--testimonial-text);
+}
+
