@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "../Logo";
+import Newsletter from "../Newsletter";
 import classes from "./index.module.css";
 
 
@@ -68,12 +69,7 @@ const Footer = () => {
                     </nav>
                 </div>
                 <div className={`${classes.newsletter}`}>
-                    <form>
-                        <div className="flex space-x-3">
-                            <input type="text" placeholder="Updates in your inbox..." className="flex-1 px-4 rounded-full focus:outline-none" />
-                            <button className="px-6 py-2 text-white rounded-full bg-brightRed hover:opacity-80 focus:outline-none">Go</button>
-                        </div>
-                    </form>
+                    <Newsletter />
                 </div>
                 <div className={`${classes.copy} text-darkGrayishBlue text-center mt-8 md:text-right`}>
                     Copyright &copy; 2022, All Rights Reserved
