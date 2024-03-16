@@ -21,7 +21,6 @@ const Carousel = () => {
             breakpoints={{
                 480: {
                     slidesPerView: 1,
-                    pagination: true,
                 },
                 768: {
                     slidesPerView: 2,
@@ -31,6 +30,7 @@ const Carousel = () => {
                 },
             }}
             spaceBetween={30}
+            pagination={ {clickable: true} }
             modules={[Pagination]}
             className="w-full"
         >

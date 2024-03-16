@@ -42,14 +42,10 @@
 
 body {
   background-image: 
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="814" height="814"><rect width="436" height="970" x="774" y="-62" fill="%23FFF0EC" fill-rule="evenodd" rx="218" transform="rotate(45 718.814 -291.157)"/></svg>');
-    /* background-attachment: fixed | scroll; */
+    url("../images/bg-tablet-pattern.svg");
   background-size: 430px, 300px;
-  background-position: top -90px right -110px, top 320px right;
+  background-position: top -90px right -110px;
   background-repeat: no-repeat;
-/* background-origin: border-box | padding-box | content-box; */
-/* background-clip: border-box | padding-box | content-box; */
-/* background-blend-mode: multiply | screen | overlay; */  
 }
 
 header, main, footer, section {
@@ -148,12 +144,21 @@ header, main, footer, section {
 }
 
 .swiper-wrapper {
-  display: flow-root;
+  margin-bottom: 24px !important;
 }
 
-.swiper-pagination {
-  margin-top: 30px;
-  position: relative;
+.swiper-horizontal > .swiper-pagination {
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet {
+  background: var(--veryLightGray) !important;
+  border: 1px solid var(--brightRed) !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--brightRed) !important;
 }
 
 
@@ -164,9 +169,10 @@ header, main, footer, section {
     background-size: 640px, 320px;
     background-position: top -120px right -70px;
     background-repeat: no-repeat;
-  /* background-origin: border-box | padding-box | content-box; */
-  /* background-clip: border-box | padding-box | content-box; */
-  /* background-blend-mode: multiply | screen | overlay; */  
+  }
+
+  #hero {
+    background-image: none;
   }
 
   #features::after {
@@ -205,6 +211,10 @@ header, main, footer, section {
     ;
     grid-template-rows: 2fr;
     grid-template-columns: min-content auto min-content;
+  }
+
+  .swiper-pagination {
+    display: none !important;
   }
 }
 
