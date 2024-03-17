@@ -121,7 +121,7 @@ I received the biggest learning curve on the next.js side:
 
 1. by implementing the form validation for the newsletter feature.
 2. by implementing an overlay for the mobile menu.
-3. swiper wasn't new to me, but new by the implementation in react.
+3. swiper wasn't new to me, but new was the implementation in react.
 
 ### Continued development
 
