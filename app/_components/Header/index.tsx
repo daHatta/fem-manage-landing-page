@@ -17,7 +17,7 @@ const Header = () => {
     const [ overlay, setOverlay ] = useState(false);
 
     return (
-        <header className="container mx-auto px-6 pt-8 pb-4 lg:py-10">
+        <header className="container mx-auto px-6 pt-8 pb-4 lg:py-10 xl:px-48">
             <div className="flex items-center justify-between">
                 <Logo fill="var(--darkBlue)"/>
                 <Navigation className="hidden lg:flex" />

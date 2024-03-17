@@ -8,7 +8,7 @@ import { footerLinks } from "@/app/constants";
 const Footer = () => {
     return (
         <footer id="footer" className={classes.bg_footer}>
-            <div className="container mx-auto grid px-6 py-10 text-sm md:flex-row md:space-y-0 md:items-start">
+            <div className="container mx-auto grid px-6 py-10 text-sm md:flex-row md:space-y-0 md:items-start xl:px-48">
                 <div className={`${classes.logo} inline-block mx-auto mt-8 md:mt-0 md:ml-0`}>
                     <Logo fill="var(--veryLightGray)"/>
                 </div>
@@ -58,7 +58,7 @@ const Footer = () => {
                 </div>
                 <div className={`${classes.navi} mt-8`}>
                     <nav id="eb-footer-navi" aria-label="Footer navigation" className="flex flex-col items-center">
-                        <ul className={`${classes.navi_list} gap-10 lg:gap-32 xl:gap-64 text-white`}>
+                        <ul className={`${classes.navi_list} gap-10 lg:gap-32 xl:gap-48 text-white`}>
                             {
                                 footerLinks.map((link) => (
                                     <li key={link.id}><Link className={`${classes.navi_link}`} href={link.url}>{link.title}</Link></li>

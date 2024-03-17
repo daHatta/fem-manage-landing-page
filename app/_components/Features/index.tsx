@@ -4,7 +4,7 @@ import classes from "./index.module.css";
 const Features = () => {
     return (
         <section id="features" className="bg-transparent">
-            <div className="container mx-auto flex flex-col gap-4 px-4 mt-16 md:space-y-0 md:flex-row">
+            <div className="container mx-auto flex flex-col gap-4 px-4 mt-16 md:space-y-0 md:flex-row xl:px-48">
                 <div className="flex flex-col md:w-1/2">
                     <h2 className={`${classes.feature_title} max-w-xs mx-auto text-3xl font-bold text-center md:text-left md:max-w-sm md:ml-0`}>What’s different about Manage?</h2>
                     <p className={`${classes.feature_text} max-w-sm text-center mt-4 md:text-left md:max-w-xs lg:text-sm`}>Manage provides all the functionality your team needs, without the complexity. 

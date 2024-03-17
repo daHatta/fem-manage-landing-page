@@ -51,7 +51,7 @@ const Carousel = () => {
                 </div>
             </SwiperSlide>
             <SwiperSlide className="mt-10 cursor-pointer">
-                <div className={`${classes.swiper_bg} flex-col items-center p-6 space-y-6 rounded-lg md:flex md:w-full`}>
+                <div className={`${classes.swiper_bg} flex flex-col items-center p-6 space-y-6 rounded-lg md:flex md:w-full`}>
                     <Image
                         src={avatarAli}
                         alt="Ali Bravo"
@@ -68,7 +68,7 @@ const Carousel = () => {
                 </div>
             </SwiperSlide>
             <SwiperSlide className="mt-10 cursor-pointer">
-                    <div className={`${classes.swiper_bg} flex-col items-center p-6 space-y-6 rounded-lg md:flex md:w-full`}>
+                    <div className={`${classes.swiper_bg} flex flex-col items-center p-6 space-y-6 rounded-lg md:flex md:w-full`}>
                         <Image
                             src={avatarRichard}
                             alt="Richard Watts"
@@ -84,7 +84,7 @@ const Carousel = () => {
                     </div>
             </SwiperSlide>
             <SwiperSlide className="mt-10 cursor-pointer">
-                    <div className={`${classes.swiper_bg} flex-col items-center p-6 space-y-6 rounded-lg md:flex md:w-full`}>
+                    <div className={`${classes.swiper_bg} flex flex-col items-center p-6 space-y-6 rounded-lg md:flex md:w-full`}>
                         <Image
                             src={avatarShanai}
                             alt="Shanai Gough"
