@@ -130,7 +130,7 @@ To improve my nextjs skills I will definitivly look out for further challenges w
 
 ### Useful resources
 
-- [Tailwind Crash Course | Project From Scratch](https://www.youtube.com/watch?v=dFgzHOX84xQ) - Great tutorial by **Brad Traversy** from _Traversy Media_.
+- [Tailwind Crash Course | Project From Scratch](https://www.youtube.com/watch?v=dFgzHOX84xQ) - Great tutorial by **Brad Traversy** from _Traversy Media_ dealing with this challenge.
 - [Build a responsive website with HTML & CSS | Part one: Analyzing the project and setting the stage](https://www.youtube.com/watch?v=h3bTwCqX4ns) - Great video series by **Kevin Powell** dealing with this challenge.
 - [Tailwind CSS Cheat Sheet](https://tailwindcomponents.com/cheatsheet/) - Tailwind CSS cheat sheet by _tailwindcomponents_.
 - [React Hook Form (+ Zod & TypeScript & Server Errors) - COMPLETE Tutorial](https://www.youtube.com/watch?v=u6PQ5xZAv7Q) - Awesome tutorial by **Wesley** aka _ByteGrad_.
