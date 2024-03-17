@@ -68,9 +68,9 @@ Packages:
 
 ### What I learned
 
-This was the biggest challenge for now which I solved by using next.js and tailwind css.
+For now this was the biggest challenge for me, where I used next.js and tailwind css to solve it.
 
-I also used plain CSS in several occasions.
+Beside tailwind css I also used plain CSS at several occasions.
 
 In order to prevent doubling code, I used grid with named areas for the footer:
 
@@ -119,9 +119,9 @@ I also used the !important property in order to customize the appearance of the 
 
 I received the biggest learning curve on the next.js side:
 
-1. Implementing the form validation for the newsletter feature.
-2. Implementing a overlay for the mobile menu.
-3. Implementing a swiper carousel in react was new to me.
+1. by implementing the form validation for the newsletter feature.
+2. by implementing an overlay for the mobile menu.
+3. swiper wasn't new to me, but new by the implementation in react.
 
 ### Continued development
 
