@@ -2,6 +2,7 @@ import Link from "next/link";
 import Logo from "../Logo";
 import Newsletter from "../Newsletter";
 import classes from "./index.module.css";
+import { footerLinks } from "@/app/constants";
 
 
 const Footer = () => {
@@ -58,13 +59,11 @@ const Footer = () => {
                 <div className={`${classes.navi} mt-8`}>
                     <nav id="eb-footer-navi" aria-label="Footer navigation" className="flex flex-col items-center">
                         <ul className={`${classes.navi_list} gap-10 lg:gap-32 xl:gap-64 text-white`}>
-                            <li><Link className={`${classes.navi_link}`} href={"/"}>Home</Link></li>
-                            <li><Link className={`${classes.navi_link}`} href={"/"}>Pricing</Link></li>
-                            <li><Link className={`${classes.navi_link}`} href={"/"}>Products</Link></li>
-                            <li><Link className={`${classes.navi_link}`} href={"/"}>About Us</Link></li>
-                            <li><Link className={`${classes.navi_link}`} href={"/"}>Careers</Link></li>
-                            <li><Link className={`${classes.navi_link}`} href={"/"}>Community</Link></li> 
-                            <li><Link className={`${classes.navi_link}`} href={"/"}>Privacy Policy</Link></li> 
+                            {
+                                footerLinks.map((link) => (
+                                    <li key={link.id}><Link className={`${classes.navi_link}`} href={link.url}>{link.title}</Link></li>
+                                ))
+                            }
                         </ul>
                     </nav>
                 </div>
