@@ -161,6 +161,18 @@ header, main, footer, section {
   background-color: var(--brightRed) !important;
 }
 
+.attribution {
+  background-color: var(--veryDarkBlue);
+}
+
+.attribution a {
+  color: var(--brightRed);
+}
+
+.attribution a:hover,
+.attribution a:focus-visible {
+  text-decoration: underline;
+}
 
 /* lg: 61em */
 @media screen and (min-width: 48em) {

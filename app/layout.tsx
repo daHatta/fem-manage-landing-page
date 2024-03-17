@@ -4,6 +4,7 @@ import "./css/globals.css";
 
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
+import Attribution from "./_components/Attribution";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,6 +25,7 @@ export default function RootLayout({
         <Header />
           {children}
         <Footer />
+        <Attribution />
       </body>
     </html>
   )
