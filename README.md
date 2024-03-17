@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/daHatta/fem-manage-landing-page](https://github.com/daHatta/fem-manage-landing-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://fem-manage-landing-page-tawny.vercel.app/](https://fem-manage-landing-page-tawny.vercel.app/)
 
 ## My process
 
